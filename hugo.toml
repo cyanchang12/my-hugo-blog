@@ -1,0 +1,46 @@
+# 基础配置
+baseURL = "http://localhost:1313/"
+languageCode = "zh-cn"
+title = "橙子的博客"
+theme = "mana"  # 指定您已安装的主题
+
+# 网站参数
+[params]
+  description = "用于学习和记录AI相关的研究及技术"
+  # 可以在这里查找并设置 mana 主题特有的参数（非必须）
+  # 例如，某些主题需要在这里设置头像、社交链接等
+
+# 菜单配置 - 直接使用中文，最可靠
+# 我们将在这里定义导航栏的所有项目
+[menu]
+
+  # 主菜单 (通常显示在顶部导航栏)
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1  # 数字越小，排列越靠左
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"  # 如果主题支持归档页
+    weight = 3
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 5
