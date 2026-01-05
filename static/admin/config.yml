@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main  # ✅ 已根据您的GitHub截图确认
+
+# 媒体文件（图片）设置
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+# 站点信息
+site_url: "https://peppy-bonbon-d3090d.netlify.app"  # ✅ 已根据您的Netlify截图填写
+display_url: "https://peppy-bonbon-d3090d.netlify.app" # ✅ 同上
+logo_url: "" # 可选，如果您有Logo，可以在这里填入完整URL
+
+# 界面语言
+locale: "zh"
+
+# 内容集合定义
+collections:
+  # 第一个集合：博客文章
+  - name: "posts"
+    label: "文章"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm", format: "YYYY-MM-DD HH:mm"}
+      - {label: "草稿状态", name: "draft", widget: "boolean", default: false}
+      - {label: "分类", name: "categories", widget: "list", default: ["未分类"]}
+      - {label: "标签", name: "tags", widget: "list"}
+      - {label: "正文", name: "body", widget: "markdown"}
