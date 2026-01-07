@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    {{ partial "head.html" . }}
+    <style>
+        .archives-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .archives-list {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+        .archive-year {
+            margin-bottom: 3rem;
+        }
+        .archive-year h3 {
+            color: #764ba2;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .archive-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .archive-item:last-child {
+            border-bottom: none;
+        }
+        .archive-date {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-right: 1rem;
+        }
+        .archive-title {
+            color: #2d3748;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .archive-title:hover {
+            color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    {{ partial "header.html" . }}
+    
+    <div class="archives-page">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Content }}</p>
+        
+        <div class="archives-list">
+            <!-- 获取所有文章，按日期倒序排列 -->
+            {{ $pages := where .Site.RegularPages "Type" "posts" }}
+            {{ $pages = $pages.ByDate.Reverse }}
+            
+            {{ if $pages }}
+                <!-- 按年份分组 -->
+                {{ range $pages.GroupByDate "2006" }}
+                <div class="archive-year">
+                    <h3>{{ .Key }} 年</h3>
+                    {{ range .Pages }}
+                    <div class="archive-item">
+                        <span class="archive-date">{{ .Date.Format "2006-01-02" }}</span>
+                        <a href="{{ .Permalink }}" class="archive-title">{{ .Title }}</a>
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            {{ else }}
+                <p>还没有发布任何文章。</p>
+            {{ end }}
+        </div>
+    </div>
+    
+    {{ partial "footer.html" . }}
+</body>
+</html>

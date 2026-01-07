@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} - {{ .Site.Title }}</title>
+    
+    <!-- 添加主题的head部分 -->
+    {{ partial "head.html" . }}
+    
     <style>
+        /* 导航栏占位符，防止内容被遮挡 */
+        .content-wrapper {
+            padding-top: 80px;
+        }
+        
+        /* 您现有的样式 - 从主题文件复制过来 */
         .about-page {
             max-width: 1200px;
             margin: 0 auto;
@@ -92,7 +102,11 @@
     </style>
 </head>
 <body>
-    <div class="about-page">
+    <!-- 添加主题导航 -->
+    {{ partial "header.html" . }}
+    
+    <!-- 用wrapper包裹内容，防止被导航遮挡 -->
+    <div class="content-wrapper">
         <div class="about-hero">
             <h1>{{ .Title }}</h1>
             <p>开发者 · 技术探索者 · 内容创作者</p>
@@ -129,5 +143,8 @@
             </aside>
         </div>
     </div>
+    
+    <!-- 添加主题页脚 -->
+    {{ partial "footer.html" . }}
 </body>
 </html>

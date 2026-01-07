@@ -2,17 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>橙子的博客</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:53016/</link>
     <description>Recent content on 橙子的博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jan 2026 02:25:24 +0000</lastBuildDate>
+    <atom:link href="http://localhost:53016/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello, World!</title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <link>http://localhost:53016/posts/hello-world/</link>
+      <pubDate>Wed, 07 Jan 2026 02:25:24 +0000</pubDate>
+      <guid>http://localhost:53016/posts/hello-world/</guid>
       <description>&lt;h2 id=&#34;hello-world&#34;&gt;Hello World!&lt;/h2&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lorem diam. Quisque vulputate nibh sodales eros pretium tincidunt. Aenean porttitor efficitur convallis. Nulla sagittis finibus convallis. Phasellus in fermentum quam, eu egestas tortor. Maecenas ac mollis leo. Integer maximus eu nisl vel sagittis.&lt;/p&gt;&#xA;&lt;p&gt;Suspendisse facilisis, mi ac scelerisque interdum, ligula ex imperdiet felis, a posuere eros justo nec sem. Nullam laoreet accumsan metus, sit amet tincidunt orci egestas nec. Pellentesque ut aliquet ante, at tristique nunc. Donec non massa nibh. Ut posuere lacus non aliquam laoreet. Fusce pharetra ligula a felis porttitor, at mollis ipsum maximus. Donec quam tortor, vehicula a magna sit amet, tincidunt dictum enim. In hac habitasse platea dictumst. Mauris sit amet ornare ligula, blandit consequat risus. Duis malesuada pellentesque lectus, non feugiat turpis eleifend a. Nullam tempus ante et diam pretium, ac faucibus ligula interdum.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>文章归档</title>
+      <link>http://localhost:53016/archives/</link>
+      <pubDate>Wed, 07 Jan 2026 10:00:00 +0800</pubDate>
+      <guid>http://localhost:53016/archives/</guid>
+      <description>&lt;p&gt;这里按时间顺序整理了所有文章，方便您查找和浏览。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于我</title>
+      <link>http://localhost:53016/about/</link>
+      <pubDate>Wed, 07 Jan 2026 09:50:00 +0800</pubDate>
+      <guid>http://localhost:53016/about/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:53016/&#34; title=&#34;返回首页&#34;&gt;← 返回首页&lt;/a&gt; &lt;/p&gt;&#xA;&lt;h2 id=&#34;-你好我是橙子&#34;&gt;👋 你好，我是橙子&lt;/h2&gt;&#xA;&lt;p&gt;欢迎来到我的技术博客！这里记录了我学习AI、编程和技术的点滴。&lt;/p&gt;&#xA;&lt;h2 id=&#34;-联系我&#34;&gt;📫 联系我&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/cyanchang12&#34;&gt;cyanchang12&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;邮箱&lt;/strong&gt;:cyanchang0@gmail.com&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-专注领域&#34;&gt;🎯 专注领域&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🤖 AI 与机器学习&lt;/li&gt;&#xA;&lt;li&gt;🌐 全栈开发&lt;/li&gt;&#xA;&lt;li&gt;🔧 开发工具与效率&lt;/li&gt;&#xA;&lt;li&gt;📈 技术管理&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-技术栈&#34;&gt;📊 技术栈&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;前端&lt;/strong&gt;: Vue.js, React, TypeScript&lt;br&gt;&#xA;&lt;strong&gt;后端&lt;/strong&gt;: Node.js, Python, Go&lt;br&gt;&#xA;&lt;strong&gt;数据库&lt;/strong&gt;: MySQL, PostgreSQL&lt;br&gt;&#xA;&lt;strong&gt;云与运维&lt;/strong&gt;: Docker, Kubernetes, AWS&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>数据分析网站建设</title>
+      <link>http://localhost:53016/posts/mysql/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53016/posts/mysql/</guid>
+      <description>&lt;p&gt;今天是建立的第一天，我准备开始寻找一些好的网站作为参考&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,10 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 橙子的博客</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>http://localhost:53016/categories/</link>
     <description>Recent content in Categories on 橙子的博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:53016/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据分析</title>
+      <link>http://localhost:53016/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53016/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
